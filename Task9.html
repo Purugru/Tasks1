@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h2, p {
+            text-align: center;
+        }
+
+        .sidenav-button {
+            width: 150px;
+            height: 100px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .sidenav-button:hover {
+            border-color: #333;
+        }
+
+        .sidenav-button:nth-child(1) {
+            background-color: MediumSeaGreen;
+            color: white;
+        }
+
+        .sidenav-button:nth-child(2) {
+            background-color: Gray;
+            color: white;
+        }
+
+        .sidenav-button:nth-child(3) {
+            background-color: Tomato;
+            color: white;
+        }
+
+        .sidenav-button:nth-child(4) {
+            background-color: DodgerBlue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hoverable Sidenav Button</h2>
+        <p>Hover over these sidenav buttons to activate them.</p>
+        <div class="sidenav-button"></div>
+        <div class="sidenav-button"></div>
+        <div class="sidenav-button"></div>
+        <div class="sidenav-button"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Profile photo */
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin: 0 auto 20px;
+        }
+
+        /* Heading and Input fields */
+        .input-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Login button */
+        .login-button {
+            background-color: SeaGreen;
+            color: white;
+            padding: 10px 100px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Remember me checkbox */
+        .remember-me {
+            margin-top: 10px;
+        }
+
+        /* Cancel button */
+        .cancel-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-photo"></div>
+        <div class="input-label">Username</div>
+        <input type="text" class="input-field" placeholder="Enter your username">
+        <div class="input-label">Password</div>
+        <input type="password" class="input-field" placeholder="Enter your password">
+        <button class="login-button">Login</button>
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <button class="cancel-button">Cancel</button>
+        <p class="forgot-password"><a href="#">Forgot password?</a></p>
+    </div>
+</body>
+</html>

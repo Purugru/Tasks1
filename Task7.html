@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style>
+        
+        .horizontal-navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .horizontal-navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 8px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            transition: background-color 0.3s;
+        }
+
+        .horizontal-navbar a.home {
+            background-color: gray;
+            color: white;
+        }
+
+        .horizontal-navbar a:hover {
+            background-color: #c0c0c0;
+        }
+
+        .vertical-navbar {
+            width: 150px;
+            background-color: cyan;
+            padding: 10px;
+        }
+
+        .vertical-navbar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            background-color: #e0e0e0;
+            transition: background-color 0.3s;
+        }
+
+        .vertical-navbar a.home {
+            background-color: yellow;
+            color: #333;
+        }
+
+        .vertical-navbar a:hover {
+            background-color: #c0c0c0;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="horizontal-navbar">
+            <a href="#" class="home">Home</a>
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+
+        <div class="vertical-navbar">
+            <a href="#" class="home">Home</a>
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>

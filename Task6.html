@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+
+        th, td {
+            border: 1px solid green;
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        .rectangle {
+            width: 100px;
+            height: 50px;
+            border: 2px solid green;
+            background-color: white;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 0.01fr);
+            gap: 10px;
+        }
+
+        .rectangle:nth-child(1) {
+            border-radius: 35px;
+        }
+
+        .rectangle:nth-child(2) {
+            border-radius: 10px;
+        }
+
+        .rectangle:nth-child(3) {
+            border-radius: 15px;
+        }
+
+        .rectangle:nth-child(4) {
+            border-radius: 20px;
+        }
+
+        .rectangle:nth-child(5) {
+            border-radius: 25px;
+        }
+
+        .rectangle:nth-child(6) {
+            border-radius: 30px;
+        }
+
+        .rectangle:nth-child(7) {
+            border-radius: 5px;
+        }
+
+        .rectangle:nth-child(8) {
+            border-radius: 40px;
+        }
+
+        .rectangle:nth-child(9) {
+            border-radius: 0px 50px 0px 50px;
+        }
+    </style>
+</head>
+<body>
+    <table width="600">
+        <tr bgcolor="cyan" align="center">
+            <th width="200">Firstname</th>
+            <th width="200">Lastname</th>
+            <th width="200">Age</th>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <div class="grid-container">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="submit_form.php" method="post">
+        <table>
+            <tr>
+                <th>First Name:</th>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th>Re-enter Password:</th>
+                <td><input type="password" name="re_password" required></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <th>Phone Number:</th>
+                <td><input type="tel" name="phone_number" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <th>State:</th>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td>
+                    <select name="country" required>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India">India</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="China">China</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Languages Known:</th>
+                <td>
+                    <input type="checkbox" name="languages_known[]" value="English"> English
+                    <input type="checkbox" name="languages_known[]" value="Kannada"> Kannada
+                    <input type="checkbox" name="languages_known[]" value="Hindi"> Hindi
+                    <input type="checkbox" name="languages_known[]" value="Telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" required>
+                    Hereby I declare all the given details are true. 
+                    <a href="https://www.ethnus.com">Log in to <u>Ethnus</u> website</a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
